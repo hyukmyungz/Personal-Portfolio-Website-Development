@@ -10,7 +10,30 @@
             background-color: #ffc0cb;
             margin: 0;
             padding: 20px;
+            animation: fadeInPage 1.5s ease-in-out; /* Fade-in animation for the whole page */
         }
+
+        @keyframes fadeInPage {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* General fade-in animation for all elements */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px); /* Adds a subtle upward motion */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         .container {
             background-color: white;
             max-width: 600px;
@@ -20,71 +43,98 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border: 1px solid #fcc;
             text-align: justify;
+            animation: fadeIn 1.5s ease-in-out; /* Fade-in effect for the container */
         }
+
         h2, h3 {
             text-transform: lowercase;
             margin-bottom: 10px;
             text-align: center;
+            animation: fadeIn 1.8s ease-in-out; /* Delayed fade-in for headers */
         }
+
         h2 {
             border-bottom: 1px solid #f99;
         }
+
         .profile {
             display: flex;
             align-items: flex-start;
             margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out; /* Delayed fade-in for the profile section */
         }
+
         .profile img {
             border-radius: 8px;
             margin-right: 20px;
             width: 120px;
             height: auto;
+            animation: fadeIn 2.2s ease-in-out; /* Fade-in effect for the profile image */
         }
+
         .profile-info {
             line-height: 1.6;
             text-align: justify;
+            animation: fadeIn 2.4s ease-in-out; /* Fade-in effect for profile text */
         }
+
         .center-intro {
             text-align: center;
             font-size: 1.1em;
             margin-bottom: 10px;
+            animation: fadeIn 2.6s ease-in-out; /* Delayed fade-in for intro text */
         }
+
         table {
-            width: 100%; /* Ensures all tables take up the same width */
-            margin-bottom: 20px; /* Add spacing between tables */
+            width: 100%;
+            margin-bottom: 20px;
+            animation: fadeIn 2.8s ease-in-out; /* Fade-in for tables */
         }
+
         th {
             color: #ff69b4;
             font-size: 1em;
             padding-bottom: 10px;
-            text-align: center; /* Center-aligns all table headers */
+            text-align: center;
             font-weight: bold;
+            animation: fadeIn 3s ease-in-out; /* Delayed fade-in for table headers */
         }
+
         td {
             padding: 10px 0;
             text-align: justify;
+            animation: fadeIn 3.2s ease-in-out; /* Fade-in for table content */
         }
+
         ul {
             list-style-type: none;
             padding: 0;
+            animation: fadeIn 3.4s ease-in-out; /* Fade-in for unordered lists */
         }
+
         ul li {
             padding: 5px 0;
+            animation: fadeIn 3.6s ease-in-out; /* Slightly delayed fade-in for list items */
         }
+
         ul li:before {
             content: "•";
             color: #ff69b4;
             display: inline-block; 
             width: 1em;
         }
+
         .decorative-line {
             color: #ff69b4;
             text-align: center;
             margin-bottom: 10px;
             font-size: 1.2em;
+            animation: fadeIn 3.8s ease-in-out; /* Fade-in for decorative lines */
         }
+
         .center-text {
             text-align: center;
+            animation: fadeIn 4s ease-in-out; /* Fade-in for centered text */
         }
     </style>
 </head>
@@ -147,7 +197,7 @@
         </table>
         <table>
             <tr>
-                <th>(most random) facts about me</th>
+                <th>more (and most random) facts about me</th>
             </tr>
             <tr>
                 <td>
