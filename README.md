@@ -1,9 +1,3 @@
-personal portfolio website
-
-github repository link https://github.com/hyukmyungz/about-me
-
-000webhost domain https://hyukmyungz.github.io/about-me
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -270,7 +264,7 @@ github repository link https://github.com/hyukmyungz/about-me
             <h3 onclick="toggleFindMe()">where to find me ദ്ദി(ᵔᗜᵔ)</h3>
             <div id="find-me-content" class="hidden find-me-content">
                 <p><strong>email</strong> <a href="mailto:anonuevo.jana@ue.edu.ph">anonuevo.jana@ue.edu.ph</a></p>
-                <p><strong>fb</strong> <a href="https://fb.com/tanrangdan" target="_blank">tanrangdan</a></p>
+                <p><strong>fb</strong> <a href="https://www.facebook.com/tanrangdan" target="_blank">Jana</a></p>
                 <p><strong>ig</strong> <a href="https://www.instagram.com/jnflav" target="_blank">jnflav</a></p>
             </div>
         </div>
