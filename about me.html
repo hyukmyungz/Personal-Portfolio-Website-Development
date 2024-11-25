@@ -136,6 +136,40 @@
             text-align: center;
             animation: fadeIn 4s ease-in-out; /* Fade-in for centered text */
         }
+
+        /* New styles for the "Where to Find Me" section */
+        .hidden {
+            display: none;
+        }
+
+        .where-to-find-me {
+            margin-top: 20px;
+            animation: fadeIn 4.2s ease-in-out; /* Fade-in for this section */
+        }
+
+        /* Adjusting the h3 styles for "Where to Find Me" */
+        .where-to-find-me h3 {
+            color: #ff69b4; /* Match the <th> color */
+            font-size: 1em; /* Match the <th> font size */
+            font-weight: bold; /* Match the <th> font weight */
+            text-align: center; /* Match the <th> alignment */
+            padding-bottom: 10px; /* Match the <th> padding */
+            margin: 0; /* Remove extra margin */
+            cursor: pointer;
+            animation: fadeIn 4.4s ease-in-out;
+        }
+
+        .where-to-find-me h3:hover {
+            background-color: transparent; /* Remove hover background for consistency */
+        }
+
+        .find-me-content {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #fcc;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -221,6 +255,21 @@
                 </td>
             </tr>
         </table>
+        <div class="where-to-find-me ദ്ദി(ᵔᗜᵔ)">
+            <h3 onclick="toggleFindMe()">Where to Find Me</h3>
+            <div id="find-me-content" class="hidden find-me-content">
+                <p><strong>Instagram:</strong> @yourhandle</p>
+                <p><strong>Twitter:</strong> @yourhandle</p>
+                <p><strong>Email:</strong> yourname@example.com</p>
+            </div>
+        </div>
     </div>
+
+    <script>
+        function toggleFindMe() {
+            const content = document.getElementById('find-me-content');
+            content.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>
